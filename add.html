@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>gharbhada.com/addaproperty</title>
+    <link rel="stylesheet" href="styles3.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Add a Property</div>
+    <div class="contents">
+      <form action="connect.php" method="post">
+        <div class="user-details">
+          <div class="inputbox">
+              <span class="details">Select : </span>
+              <input type="radio" name="select" value="r">
+              <label class="details" for="html">Room</label>
+              <input type="radio" name="select" value="f" >
+              <label class="details" for="css">Flat</label><br><br>  
+          </div>
+            <div class="inputbox">
+              <span class="details">Number of rooms : </span>
+              <select name="rooms" class="selects">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option> 
+              </select>
+              <span class="details">  Enter the Floor : </span>
+              <select name="floor" class="selects">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                </select><br><br>
+            </div>
+            <div class="contains">
+              <span for="">Select the price : </span><br><br>
+              <input type="range" id="my-slider" min="0" max="50000" value="5000" step="100" oninput="slider()" name="price">
+              <div id="slider-value">0</div>
+          </div>
+            
+          <div class="inputbox">
+              <span class="details">Address : </span>
+              <input placeholder="City"  type="text" name="city">
+              <input placeholder="Tole" type="text" name="tole">
+              <input placeholder="House Number" type="text" name="houseno"><br><br>
+          </div>
+          <div class="inputbox">
+            <span>Add some photos : </span>
+            <input type="file" onchange="readurl(this)" accept="image/*" multiple name="photos">
+          </div><br>
+          <div class="inputbox">
+            <textarea name="info" placeholder="Any Additional Information" id="" cols="70" rows="5" ></textarea>
+          </div><br>
+          <div class="button">
+            <div class="inner"></div>
+            <button> <a href="display.html"> Done </a></button>
+         </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="java3.js"></script>
+</body>
+</html>
