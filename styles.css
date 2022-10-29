@@ -26,6 +26,10 @@ header
     align-items: center;
     padding: 30px 10px;
 }
+html
+{
+        scroll-behavior: smooth;
+}
 .logo
 {
     cursor: pointer;
