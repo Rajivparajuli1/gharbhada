@@ -5,19 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gharbhada.com</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styleslog.css">
 </head>
 <body>
     <header>
-        <img class="logo" src="logo.png" alt="logo">
-        <nav class="navbar">
+       <img class="logo" src="logo.png" alt="logo">    
+        <nav  class="navbar">
                 <ul class="links">
                     <li><a href="#head">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="ownerlogin.html">Add a property</a></li>
-                    <li><a href="registerselect.html"><button > Register </button></a></li>
-                    <li><a href="loginselect.html"><button > Login </button></a></li>
-                </ul> 
+                    <li><a href="add.html">Add a property</a></li>
+                    <li><img class="user-pic" src="profile.png" alt="logo" onclick="toggleMenu()"></li>
+                </ul>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="profile.png" alt="">
+                            <h3>Rajiv Parajuli</h3>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="setting.png" alt="">
+                            <p>Settings</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="help.png" alt="">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="logout.png" alt="">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div>
         </nav> 
     </header>
     <section id="head">
@@ -61,7 +84,7 @@
                       </div>
                       <div class="button">
                          <div class="icon">
-                            <a href="www.linkedin.com/in/rajiv-parajuli-39b449255"><i class="fab fa-linkedin"></i></a> 
+                            <i class="fab fa-linkedin"></i>
                          </div>
                          <span>Linkedin</span>
                       </div>
@@ -80,6 +103,12 @@
             </th>
         </tr>
     </table>
-    <script src="java.js"></script>
+    <script src="java.js">
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu()
+        {
+            submenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 </html>

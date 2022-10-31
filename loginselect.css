@@ -49,12 +49,18 @@ header
 .links li a
 {
     transition: all 0.3s ease 0s;
-    color: rgb(17, 93, 217);
+    color: rgb(92, 245, 247);
 
 }
 .links li a:hover
 {
-    color: rgb(123, 246, 232);
+    color: rgb(17, 93, 217);
+}
+html
+{
+
+    scroll-behavior: smooth;
+
 }
 button
 {
@@ -64,14 +70,21 @@ button
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    position: relative;
 }
 button:hover
 {
     background-color: rgb(123, 246, 232);
 }
-.container
+h1
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+}
+p
+{
+    text-align: center;
+}
+.buttons
+{
+    margin-left: 30%;
 }

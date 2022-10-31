@@ -23,11 +23,12 @@ body{
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
+
 .container .title{
   font-size: 25px;
   font-weight: 500;
   position: relative;
-  margin: 0% 35%;
+  margin: 0% 25%;
 }
 form .user-details .input-box{
     display: inline;
