@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gharbhada.com</title>
+    <link rel="stylesheet" href="ownerprofile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+       <img class="logo" src="logo.png" alt="logo">    
+        <nav  class="navbar">
+                <ul class="links">
+                    <li><a href="ownerdisplay1.html">Home</a></li>
+                    <li><a href="#property">Property</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="ownerprofile.html">Profile</a></li>
+                </ul>   
+        </nav> 
+    </header>
+    <section id="head">
+        <div class="head"><h1>Owner Details</h1></div>
+        <div class="container">
+            <div class="box">
+                <form action=""> 
+                    <div class="formgroup">
+                        <label for="">Full Name : </label>
+                        <input type="text" value="Rajiv Parajuli" class="inputs" name="name">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Username :</label>
+                        <input type="text" value="prajiv12345" class="inputs" name="username">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Phone Number :</label>
+                        <input type="number" value="9999999999" class="inputs" name="phone">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Email :</label>
+                        <input type="text" value="parajulirajeev123@gmail.com" class="inputs" name="email">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Address :</label>
+                        <input type="text" value="masbar" class="inputs" name="tole">
+                    </div>
+                    <div class="formgroup">
+                        <button>Update</button>
+                    </div>
+
+                </form>
+
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section id="property">
+        <div class="head"><h1>Your Property</h1></div>
+        <div class="container">
+            <div class="box">
+                <form action=""> 
+                    <div class="formgroup">
+                        <label for="">Title : </label>
+                        <input type="text" value="Room for rent " class="title" name="title">
+                    </div>
+                    <div class="formgroup">
+                        <span class="details">Select Type : </span>
+                        <input type="radio" name="select" value="r">
+                        <label class="details" for="html">Room</label>
+                        <input type="radio" name="select" value="f" >
+                        <label class="radio" for="css">Flat</label>    
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Area :</label>
+                        <input type="number" value="20" class="inputs" name="area">
+                        <label for="">Number of rooms:</label>
+                        <input type="number" value="10" class="rooms" name="rooms">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Address :</label>
+                        <input type="text" value="Pokhara" class="address" name="city">
+                        <input type="text" value="masbar" class="address" name="tole">
+                        <input type="number" value="19348" class="address" name="houseno">
+                    </div>
+                    <span>Your Property Photos : </span>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="house1.jpeg" alt=""></div>
+                          <div class="swiper-slide"><img src="house2.jpeg" alt=""></div>
+                          <div class="swiper-slide"><img src="house3.jpeg" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-scrollbar"></div>
+                      </div>
+                    <div class="formgroup">
+                        <button>Update</button>
+                    </div>
+
+                </form>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section id="lists">
+        <div class="container">
+        </div>
+    </section>
+    <table id="tab" >
+        <tr>
+            <th>
+                <section id="about">
+                    <h1 id="headings">
+                        <img src="logo.png" alt="ghar bhada logo" id="bottom" class="logo">
+                    </h1>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+                    <div class="wrapper">
+                      <div class="button">
+                         <div class="icon">
+                            <i class="fab fa-facebook-f"></i>
+                         </div>
+                         <span>Facebook</span>
+                      </div>
+                      <div class="button">
+                         <div class="icon">
+                            <i class="fab fa-twitter"></i>
+                         </div>
+                         <span>Twitter</span>
+                      </div>
+                      <div class="button">
+                         <div class="icon">
+                            <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+                         </div>
+                         <span>Instagram</span>
+                      </div>
+                      <div class="button">
+                         <div class="icon">
+                            <i class="fab fa-linkedin"></i>
+                         </div>
+                         <span>Linkedin</span>
+                      </div>
+                   </div>
+                </section>    
+            </th>
+            <th>
+                <p class="describe">Based on pokhara valley, Ghar Bhada is a Room rental webapp</p>
+                <p class="describe">that helps people find their desired accomodation.</p> 
+            </th>
+            <th>
+                <h2 class="main">Contact us</h1>
+                <p class="small">Masbar, Pokhara, Nepal</p>
+                <p class="small">9999999999</p> 
+                <p><a class="linkss" href="mailto: be2019ce11@gces.np">be2019ce11@gces.np</a></p>
+            </th>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', 
+{
+    autoplay:{
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
+    </script>
+</body>
+</html>
