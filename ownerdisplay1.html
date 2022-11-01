@@ -5,61 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gharbhada.com</title>
-    <link rel="stylesheet" href="ownerdisplay1.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-       <img class="logo" src="logo.png" alt="logo">    
-        <nav  class="navbar">
+        <img class="logo" src="logo.png" alt="logo">
+        <nav class="navbar">
                 <ul class="links">
                     <li><a href="#head">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="add.html">Add a property</a></li>
-                    <li><img class="user-pic" src="profile.png" alt="logo" onclick="toggleMenu()"></li>
-                </ul>
-                <div class="sub-menu-wrap" id="subMenu">
-                    <div class="sub-menu">
-                        <div class="user-info">
-                            <img src="profile.png" alt="">
-                            <h3>Rajiv Parajuli</h3>
-                        </div>
-                        <hr>
-                        <a href="#" class="sub-menu-link">
-                            <img src="setting.png" alt="">
-                            <p>Settings</p>
-                            <span>></span>
-                        </a>
-                        <a href="#" class="sub-menu-link">
-                            <img src="help.png" alt="">
-                            <p>Help & Support</p>
-                            <span>></span>
-                        </a>
-                        <a href="#" class="sub-menu-link">
-                            <img src="logout.png" alt="">
-                            <p>Logout</p>
-                            <span>></span>
-                        </a>
-                    </div>
-                </div>
+                </ul> 
         </nav> 
     </header>
     <section id="head">
         <div class="container">
-            <div class="box">
-                <table class="tabul" border="1">
-                    <tr>
-                        <th>Name of the property</th>
-                        <th>Image</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <th>HOUSE</th>
-                        <th><img src="naruto.webp" alt="" class="house"></th>
-                        <th>10000</th>
-                    </tr>
-                </table>
-            </div>
-            
+            <form action="" class="search">
+                <input type="text" placeholder="Search the location" name="">
+                <button type="submit"><a href="display.html"><img src="search.png"></a></button>
+            </form>
         </div>
     </section>
     <section id="lists">
@@ -95,7 +59,7 @@
                       </div>
                       <div class="button">
                          <div class="icon">
-                            <i class="fab fa-linkedin"></i>
+                            <a href="www.linkedin.com/in/rajiv-parajuli-39b449255"><i class="fab fa-linkedin"></i></a> 
                          </div>
                          <span>Linkedin</span>
                       </div>
@@ -114,12 +78,6 @@
             </th>
         </tr>
     </table>
-    <script src="java.js">
-        let subMenu = document.getElementById("subMenu");
-        function toggleMenu()
-        {
-            submenu.classList.toggle("open-menu");
-        }
-    </script>
+    <script src="java.js"></script>
 </body>
 </html>
