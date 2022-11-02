@@ -19,13 +19,13 @@ li, a, button
     color: rgb(21, 21, 18);
     text-decoration: none ;
 }
-header
+main
 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10px;
+  position: absolute;
+  margin-right: 85%;
+  margin-bottom: 50%;
 }
+
 .logo
 {
     cursor: pointer;
