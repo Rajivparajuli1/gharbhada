@@ -10,6 +10,7 @@ body
     background: url(img1.jpeg);
     background-size: cover;
     background-position: center;
+    font-family: 'Montserrat',sans-serif;
 }
 li, a, button
 {
@@ -25,6 +26,12 @@ header
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10px;
+}
+main
+{
+  position: absolute;
+  margin-right: 85%;
+  margin-bottom: 50%;
 }
 .logo
 {
@@ -81,31 +88,127 @@ button:hover
     align-items: center;
     justify-content: center;
 }
-.search
+.box
 {
-    width: 100%;
-    max-width: 400px;
+    height: 500px;
+    width: 700px;
     background: rgba(255,255,255,0.2);
     display: flex;
     align-items: center;
-    border-radius: 60px;
     padding: 10px 20px;
-    margin-top: 27%;
+    background: url(img1.jpeg);
+    border: 3px solid;
 }
-.search input
+
+#head
 {
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 20px 20px;
-    font-size: 20px;
-    color: #92f2f9 ;
+    margin-top: 50px;
 }
-::placeholder
+#property
 {
-    color: azure;
+    margin-top: 140px;
 }
+#head .container .box .formgroup 
+{
+  height: 70px;
+  width: 680px;
+  margin: 10px;
+  outline: none;
+  font-size: 30px;
+  border-radius: 5px;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  align-items: center;
+}
+#head .container .box .formgroup .inputs
+{
+    position: relative;
+    height: 45px;
+    width: 400px;
+    font-size: 30px;
+    background-color: transparent;
+    padding-left : 10px;
+    border-radius: 30px;
+}
+#property .container .box .formgroup 
+{
+  height: 70px;
+  width: 1000px;
+  margin: 10px;
+  outline: none;
+  font-size: 30px;
+  border-radius: 5px;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  align-items: center;
+}
+#property .container .box .formgroup .inputs
+{
+    position: relative;
+    height: 45px;
+    width: 90px;
+    font-size: 30px;
+    background-color: transparent;
+    padding-left : 10px;
+    border-radius: 30px;
+}
+#property .container .box .formgroup input.title
+{
+    position: relative;
+    height: 45px;
+    width: 590px;
+    font-size: 30px;
+    background-color: transparent;
+    padding-left : 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+#property .container .box .formgroup input.address
+{
+    position: relative;
+    height: 45px;
+    width: 150px;
+    font-size: 30px;
+    background-color: transparent;
+    padding-left : 10px;
+    border-radius: 30px;
+}
+#property .container .box .formgroup input.rooms
+{
+    position: relative;
+    height: 45px;
+    width: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    padding-left : 10px;
+    border-radius: 30px;
+}
+
+.swiper-slide img
+{
+    width: 150%;
+
+}
+.head
+{
+    background: url(img1.jpeg);
+    border-radius: 50px;
+    width: 15%;
+    margin-left:595px ;
+}
+h1
+{
+    position: relative;
+    display: flex;
+    text-align: center;
+    padding-left: 20px;
+    border: 1px solid;
+    border-color: blue;
+    border-radius: 50px;
+}
+
 .search button img
 {
     width: 25px;
@@ -190,7 +293,6 @@ button:hover
     color: rgb(92, 245, 247);
     filter: saturate(20);
   }
-  
   .linkss
   {
     font-size: 20px;
@@ -198,7 +300,24 @@ button:hover
     margin-top: 0px;
     filter: saturate(20);
   }
-
+  .swiper
+  {
+    width: 180px;
+    height: 170px;
+  }
+  .swiper .swiper-button-prev, .swiper .swiper-button-next
+  {
+    color: white;
+  }
+  .swiper .swiper-pagination-bullet-active
+  {
+    background: white;
+  }
+  span
+  {
+    margin-left: 20px;
+    font-size: 30px;
+  }
   @media screen and (max-width = 600px)
   {
     
