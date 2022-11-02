@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>gharbhada.com/addaproperty</title>
-    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="add.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
+  <main><a href="ownerdisplay1.html"><img class="logo" src="images/logo.png" alt=""></a></main>
   <div class="container">
     <div class="title">Add a Property</div>
     <div class="contents">
@@ -44,16 +45,16 @@
           </div>  
           <div class="inputbox">
               <span class="details">Address : </span>
-              <input placeholder="City"  type="text" name="city">
-              <input placeholder="Tole" type="text" name="tole">
-              <input placeholder="House Number" type="text" name="houseno"><br><br>
+              <input placeholder="City"  type="text" name="city" required>
+              <input placeholder="Tole" type="text" name="tole" required>
+              <input placeholder="House Number" type="text" name="houseno" required><br><br>
           </div>
           <div class="inputbox">
             <span>Add some photos : </span>
-            <input type="file" onchange="readurl(this)" accept="image/*" multiple name="photos">
+            <input type="file" onchange="readurl(this)" accept="image/*" multiple name="photos" required>
           </div><br>
           <div class="inputbox">
-            <textarea name="info" placeholder="Any Additional Information" id="" cols="70" rows="5" ></textarea>
+            <textarea name="info" placeholder="Any Additional Information" id="" cols="70" rows="5" required ></textarea>
           </div><br>
           <div class="button">
             <div class="inner"></div>
