@@ -16,6 +16,23 @@ body{
     background-size: cover;
     background-position: center;
 }
+main
+{
+  position: absolute;
+  margin-right: 88%;
+  margin-bottom: 52%;
+}
+.logo
+{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 10px;
+}
+.logo:hover
+{
+    filter: saturate(5);
+    transition: filter 0.4s ease-in-out;
+}
 .container{
   width: 30%;
   background-color: #fff;
