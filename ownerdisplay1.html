@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gharbhada.com</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ownerprofile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
+    <main><a href="ownerdisplay1.html"><img class="logo" src="logo.png" alt="logo">   </a> </main>
     <header>
-        <img class="logo" src="logo.png" alt="logo">
-        <nav class="navbar">
+        <nav  class="navbar">
                 <ul class="links">
-                    <li><a href="#head">Home</a></li>
+                    <li><a href="ownerdisplay1.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="add.html">Add a property</a></li>
-                </ul> 
+                    <li><a href="index.html">Logout</a></li>
+                </ul>   
         </nav> 
     </header>
     <section id="head">
+        <div class="head"><h1>Owner Details</h1></div>
         <div class="container">
-            <form action="" class="search">
-                <input type="text" placeholder="Search the location" name="">
-                <button type="submit"><a href="display.html"><img src="search.png"></a></button>
-            </form>
+            <div class="box">
+                <form action=""> 
+                    <div class="formgroup">
+                        <label for="">Full Name : </label>
+                        <input type="text" value="Rajiv Parajuli" class="inputs" name="name">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Username :</label>
+                        <input type="text" value="prajiv12345" class="inputs" name="username">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Phone Number :</label>
+                        <input type="number" value="9999999999" class="inputs" name="phone">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Email :</label>
+                        <input type="text" value="parajulirajeev123@gmail.com" class="inputs" name="email">
+                    </div>
+                    <div class="formgroup">
+                        <label for="">Address :</label>
+                        <input type="text" value="masbar" class="inputs" name="tole">
+                    </div>
+                    <div class="formgroup">
+                        <button>Update</button>
+                    </div>
+
+                </form>
+
+                <hr>
+            </div>
         </div>
     </section>
+    
     <section id="lists">
         <div class="container">
         </div>
@@ -59,7 +90,7 @@
                       </div>
                       <div class="button">
                          <div class="icon">
-                            <a href="www.linkedin.com/in/rajiv-parajuli-39b449255"><i class="fab fa-linkedin"></i></a> 
+                            <i class="fab fa-linkedin"></i>
                          </div>
                          <span>Linkedin</span>
                       </div>
@@ -78,6 +109,21 @@
             </th>
         </tr>
     </table>
-    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', 
+{
+    autoplay:{
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+  
+});
+    </script>
 </body>
 </html>
