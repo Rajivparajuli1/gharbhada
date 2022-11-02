@@ -27,6 +27,13 @@ header
     align-items: center;
     padding: 30px 10px;
 }
+main
+{
+  position: absolute;
+  margin-right: 88%;
+  margin-bottom: 52%;
+}
+
 .logo
 {
     cursor: pointer;
